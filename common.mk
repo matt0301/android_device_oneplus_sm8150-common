@@ -344,6 +344,11 @@ PRODUCT_PACKAGES += \
     libchrome \
     libchrome.vendor
 
+# Namespace
+PRODUCT_BOARD_PLATFORM := msmnile
+PRODUCT_USES_QCOM_HARDWARE := true
+PRODUCT_SOONG_NAMESPACES += $(LOCAL_PATH)
+
 # Net
 PRODUCT_PACKAGES += \
     netutils-wrapper-1.0
